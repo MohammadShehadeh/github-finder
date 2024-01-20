@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid should render to match snapshot 1`] = `
+<div
+  className="grid"
+>
+  <div
+    className="col col-sm-12 col-md-6 col-lg-4"
+  >
+    Col 1
+  </div>
+  <div
+    className="col col-sm-12 col-md-6 col-lg-4"
+  >
+    Col 2
+  </div>
+  <div
+    className="col col-sm-12 col-md-6 col-lg-4"
+  >
+    Col 3
+  </div>
+</div>
+`;

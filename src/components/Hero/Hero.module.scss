@@ -1,0 +1,47 @@
+@import '@/styles/shared';
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  inset: 0;
+  max-height: 900px;
+  min-height: 660px;
+
+  &::before {
+    background: var(--overlay-color);
+    content: '';
+    inset: 0;
+    position: absolute;
+  }
+}
+
+.wrapper {
+  z-index: 1;
+  margin-block: calc(var(--lg-spacing) * 6) calc(var(--lg-spacing) * 4);
+
+  @include respond-below('md') {
+    margin-bottom: calc(var(--lg-spacing) * 3) calc(var(--lg-spacing) * 2);
+  }
+}
+
+.headline {
+  color: var(--color-text-light);
+  margin-block: var(--sm-spacing) var(--md-spacing);
+  max-width: 680px;
+  line-height: 1.4;
+}
+
+.separator {
+  color: var(--background-color);
+  height: 40px;
+  transform: translateY(-30px);
+  width: 100%;
+}

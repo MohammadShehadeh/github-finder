@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render to match snapshot 1`] = `
+<a
+  className="card"
+  href="url"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <img
+    alt="Github Profile Image"
+    data-nimg="1"
+    decoding="async"
+    height={100}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fplaceholder.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Fplaceholder.png&w=128&q=75 1x, /_next/image?url=%2Fplaceholder.png&w=256&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    width={100}
+  />
+  <h3
+    className="name"
+  >
+    Github Profile Image
+  </h3>
+  <span
+    className="eyebrow language contained secondary"
+  >
+    <span
+      className="label"
+    >
+      js
+    </span>
+  </span>
+  <span
+    className="eyebrow forks contained tertiary"
+  >
+    <span
+      className="label"
+    >
+      Fork: 10
+    </span>
+  </span>
+  <span
+    className="eyebrow stars contained tertiary"
+  >
+    <span
+      className="label"
+    >
+      Star: 10
+    </span>
+  </span>
+</a>
+`;
+
+exports[`Card should render to match snapshot with missing data 1`] = `
+<a
+  className="card"
+  href="url"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <img
+    alt="Github Profile Image"
+    data-nimg="1"
+    decoding="async"
+    height={100}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fplaceholder.png&w=256&q=75"
+    srcSet="/_next/image?url=%2Fplaceholder.png&w=128&q=75 1x, /_next/image?url=%2Fplaceholder.png&w=256&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    width={100}
+  />
+  <h3
+    className="name"
+  >
+    Github Profile Image
+  </h3>
+</a>
+`;

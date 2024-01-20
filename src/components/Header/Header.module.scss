@@ -1,0 +1,35 @@
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  padding: var(--md-spacing) 0;
+}
+
+.wrapper {
+  padding-bottom: var(--md-spacing);
+  position: relative;
+
+  &::after {
+    background-color: var(--palette-primaryLight-900);
+    bottom: 0;
+    content: '';
+    height: 1px;
+    opacity: 0.2;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sm-spacing);
+
+  &:hover {
+    text-decoration: none;
+  }
+}

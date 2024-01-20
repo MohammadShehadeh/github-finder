@@ -1,0 +1,34 @@
+.form {
+  margin-block: var(--sm-spacing) var(--md-spacing);
+  position: relative;
+}
+
+.searchIcon,
+button.reset,
+button.submit {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.searchIcon {
+  left: var(--md-spacing);
+}
+
+.submit {
+  right: var(--sm-spacing);
+}
+
+input.input {
+  padding-left: calc(var(--lg-spacing) + var(--md-spacing));
+  padding-right: calc(var(--lg-spacing) * 3);
+}
+
+.reset {
+  right: 64px;
+  transition: rotate 500ms ease-in-out;
+
+  &:hover {
+    rotate: -360deg;
+  }
+}

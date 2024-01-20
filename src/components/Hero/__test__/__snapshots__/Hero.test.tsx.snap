@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero should render to match snapshot 1`] = `
+[
+  <section
+    className="hero"
+  >
+    <div
+      className="background"
+    >
+      <img
+        alt="Modern office with powerful desktop computer"
+        className="image"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        onError={[Function]}
+        onLoad={[Function]}
+        sizes="100vw"
+        src="/_next/image?url=%2Fhero.jpg&w=3840&q=50"
+        srcSet="/_next/image?url=%2Fhero.jpg&w=640&q=50 640w, /_next/image?url=%2Fhero.jpg&w=750&q=50 750w, /_next/image?url=%2Fhero.jpg&w=828&q=50 828w, /_next/image?url=%2Fhero.jpg&w=1080&q=50 1080w, /_next/image?url=%2Fhero.jpg&w=1200&q=50 1200w, /_next/image?url=%2Fhero.jpg&w=1920&q=50 1920w, /_next/image?url=%2Fhero.jpg&w=2048&q=50 2048w, /_next/image?url=%2Fhero.jpg&w=3840&q=50 3840w"
+        style={
+          {
+            "bottom": 0,
+            "color": "transparent",
+            "height": "100%",
+            "left": 0,
+            "objectFit": "cover",
+            "objectPosition": "center",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      />
+      <div
+        className="container"
+      >
+        <div
+          className="wrapper contain"
+        >
+          <span
+            className="eyebrow outlined primary"
+          >
+            <span
+              className="label"
+            >
+              Unleash
+            </span>
+          </span>
+          <h1
+            className="headline"
+          >
+            Empower Your Code Journey with GitHub Finder 
+            <br />
+             Uncover, Collaborate, and Thrive in the Realm of Open Source Excellence!
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <svg
+    className="separator"
+    preserveAspectRatio="none"
+    viewBox="0 0 1440 74"
+  >
+    <path
+      d="M456.464 0.0433865C277.158 -1.70575 0 50.0141 0 50.0141V74H1440V50.0141C1440 50.0141 1320.4 31.1925 1243.09 27.0276C1099.33 19.2816 1019.08 53.1981 875.138 50.0141C710.527 46.3727 621.108 1.64949 456.464 0.0433865Z"
+    />
+  </svg>,
+]
+`;

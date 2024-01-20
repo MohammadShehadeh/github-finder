@@ -1,0 +1,39 @@
+.eyebrow {
+  align-items: center;
+  border-radius: var(--md-spacing);
+  display: inline-flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.label {
+  border-radius: var(--md-spacing);
+  border-style: solid;
+  border-width: 1px;
+  font-size: 12px;
+  padding: var(--xsm-spacing) var(--sm-spacing);
+}
+
+.contained {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--palette-primaryLight-900);
+  margin: var(--xsm-spacing) 0;
+}
+
+.outlined {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.secondary {
+  background-color: var(--palette-secondary-900);
+  border-color: var(--palette-secondary-700);
+  color: var(--palette-secondary-100);
+}
+
+.tertiary {
+  background-color: var(--palette-primaryDark-700);
+  border-color: var(--palette-primaryDark-500);
+  color: var(--palette-primaryLight-900);
+}

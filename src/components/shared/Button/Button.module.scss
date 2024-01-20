@@ -1,0 +1,42 @@
+.button {
+  align-items: center;
+  border-radius: var(--lg-spacing);
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  gap: var(--sm-spacing);
+  min-height: 42px;
+  padding: 0 var(--md-spacing);
+  position: relative;
+  width: fit-content;
+
+  > * {
+    flex-shrink: 0;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.normal {
+  color: var(--palette-primaryLight-900);
+}
+
+.contained {
+  background-color: var(--primary);
+  color: var(--palette-primaryLight-900);
+}
+
+.outlined {
+  background-color: var(--dark-color);
+  color: var(--palette-primaryLight-900);
+}
+
+.small {
+  font-size: 12px;
+  min-height: 32px;
+  padding: 0 var(--sm-spacing);
+}

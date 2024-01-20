@@ -1,0 +1,91 @@
+@import '@/styles/shared';
+
+:root {
+  --xsm-spacing: 4px;
+  --sm-spacing: 8px;
+  --md-spacing: 16px;
+  --lg-spacing: 32px;
+
+  --overlay-color: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.25) 100%);
+  --background-color: #0d1117;
+  --dark-color: #333;
+  --muted-color: #a7a7a7;
+
+  --primary: #794bf2;
+
+  --palette-primaryLight-900: #fcfcfc;
+
+  --palette-secondary-700: #0059b2;
+  --palette-secondary-900: #003a75;
+  --palette-secondary-100: #c2e0ff;
+
+  --palette-primaryDark-700: #1f262e;
+  --palette-primaryDark-500: #3b4a59;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+html {
+  background-color: var(--background-color);
+  color-scheme: dark;
+  color: var(--palette-primaryLight-900);
+  font-family: var(--font-montserrat);
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+h1 {
+  @include respond-above('md') {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  @include respond-above('md') {
+    font-size: 24px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+svg {
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+}
+
+img {
+  font-style: italic;
+  height: auto;
+  shape-margin: 12px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  background-color: transparent;
+}

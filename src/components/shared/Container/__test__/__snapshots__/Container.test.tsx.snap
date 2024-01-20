@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container should render "full" to match snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="full"
+  >
+    full
+  </div>
+</div>
+`;
+
+exports[`Container should render "main" to match snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="contain"
+  >
+    main
+  </div>
+</div>
+`;

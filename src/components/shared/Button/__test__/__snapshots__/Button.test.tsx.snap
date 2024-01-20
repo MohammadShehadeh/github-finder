@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render "default" to match snapshot 1`] = `
+<button
+  className="button contained default"
+>
+  Default Button
+</button>
+`;
+
+exports[`Button should render "small" to match snapshot 1`] = `
+<button
+  className="button contained small"
+>
+  small Button
+</button>
+`;

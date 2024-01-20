@@ -1,0 +1,51 @@
+.card {
+  position: relative;
+  display: block;
+
+  &:hover,
+  &:focus-within {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    background: var(--background-color);
+    content: '';
+    inset: 0;
+    opacity: 0.6;
+    position: absolute;
+    transition: opacity 200ms ease;
+  }
+}
+
+.name {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.stars,
+.forks {
+  position: absolute;
+  top: var(--xsm-spacing);
+}
+
+.stars {
+  right: var(--xsm-spacing);
+}
+
+.forks {
+  left: var(--xsm-spacing);
+}
+
+.language {
+  position: absolute;
+  bottom: var(--xsm-spacing);
+  left: var(--xsm-spacing);
+}

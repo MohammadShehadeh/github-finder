@@ -1,0 +1,19 @@
+.skeleton {
+  animation: loading 1.5s ease-in-out infinite alternate;
+  background: rgba(var(--rgba-dark), 0.2);
+  background: var(--palette-primaryDark-700);
+  border-radius: var(--sm-spacing);
+  opacity: 0.8;
+  width: 100%;
+}
+
+.loading {
+  display: block;
+  padding-top: 100%;
+}
+
+@keyframes loading {
+  50% {
+    opacity: 0.4;
+  }
+}
