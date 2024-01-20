@@ -54,6 +54,7 @@ export const Search = () => {
     setSearchResults((prevSearchResults) => {
       // prevent unnecessary updating on the state
       if (
+        prevSearchResults.isLoading ||
         !prevSearchResults.query ||
         !prevSearchResults.items?.length ||
         !prevSearchResults.hasMoreData

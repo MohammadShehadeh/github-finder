@@ -73,6 +73,8 @@ npm run build
 Builds the app for production to the `.next` folder.\
 It correctly bundles Next in production mode and optimizes the build for the best performance.
 
+note: make sure to create a `.env` file in the root directory before running this command
+
 #### Run in Production Mode:
 
 ```bash
