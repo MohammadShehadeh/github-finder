@@ -9,6 +9,7 @@ exports[`Card should render to match snapshot 1`] = `
 >
   <img
     alt="Github Profile Image"
+    className="image"
     data-nimg="1"
     decoding="async"
     height={100}
@@ -68,6 +69,7 @@ exports[`Card should render to match snapshot with missing data 1`] = `
 >
   <img
     alt="Github Profile Image"
+    className="image"
     data-nimg="1"
     decoding="async"
     height={100}
