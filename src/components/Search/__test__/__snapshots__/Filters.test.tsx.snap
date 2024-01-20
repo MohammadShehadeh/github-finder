@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters should render to match snapshot 1`] = `
+<div
+  className="filters"
+>
+  <p>
+    Search type:
+  </p>
+  <button
+    className="button contained small"
+    onClick={[Function]}
+  >
+    Users
+  </button>
+  <button
+    className="button outlined small"
+    onClick={[Function]}
+  >
+    Repositories
+  </button>
+</div>
+`;

@@ -20,6 +20,12 @@ export interface FormattedRepo {
   type: string;
 }
 
+/**
+ * Formats user data for display.
+ *
+ * @param {GitHubUser} user The GitHub user object.
+ * @returns {FormattedUser} The formatted user object.
+ */
 export const formatUserData = (user: GitHubUser): FormattedUser => ({
   name: user.login,
   image: user.avatar_url || '',
@@ -27,6 +33,12 @@ export const formatUserData = (user: GitHubUser): FormattedUser => ({
   type: USERS,
 });
 
+/**
+ * Formats repository data for display.
+ *
+ * @param {GitHubRepo} repo The GitHub repository object.
+ * @returns {FormattedRepo} The formatted repository object.
+ */
 export const formatRepoData = (repo: GitHubRepo): FormattedRepo => ({
   name: repo.name,
   url: repo.html_url,

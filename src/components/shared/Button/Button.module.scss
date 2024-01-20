@@ -14,10 +14,8 @@
     flex-shrink: 0;
   }
 
-  @media (hover: hover) {
-    &:hover {
-      opacity: 0.8;
-    }
+  &:hover {
+    opacity: 0.8;
   }
 }
 

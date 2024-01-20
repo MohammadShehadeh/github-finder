@@ -25,7 +25,7 @@ export const Card = ({
 }: CardProps) => {
   return (
     <a className={styles.card} href={url} target="_blank" rel="noopener noreferrer">
-      <Image width={100} height={100} src={image} alt={name} />
+      <Image className={styles.image} width={100} height={100} src={image} alt={name} />
       <h3 className={styles.name}>{name}</h3>
       {language && <Eyebrow color="secondary" className={styles.language} label={language} />}
       {!!forksCount && (

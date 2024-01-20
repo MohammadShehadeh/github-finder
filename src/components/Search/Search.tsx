@@ -23,7 +23,7 @@ type SearchResultsType = {
   items: (FormattedRepo | FormattedUser)[] | null;
   isError: boolean;
   isLoading: boolean;
-  type: SearchType;
+  type: string;
   hasMoreData: boolean;
 };
 
@@ -91,7 +91,7 @@ export const Search = () => {
     }));
   }, []);
 
-  const searchByTypeHandler = useCallback((type: SearchType) => {
+  const searchByTypeHandler = useCallback((type: string) => {
     setSearchResults((prevSearchResults) => ({
       ...prevSearchResults,
       items: null,
@@ -133,7 +133,7 @@ export const Search = () => {
             isLoading: false,
             items: [
               ...(prevSearchResults.items ?? []),
-              ...(userSearchData.items?.map((item) => formatters[type](item)) ?? []),
+              ...(userSearchData.items?.map((item) => formatters[type as SearchType](item)) ?? []),
             ],
             hasMoreData: !!userSearchData.items.length,
           };
@@ -190,9 +190,7 @@ export const Search = () => {
           />
         )}
 
-        {isError && (
-          <Message title="Something went wrong!" description="please try again later." />
-        )}
+        {isError && <Message title="Something went wrong!" description="please try again later." />}
 
         <div className={styles.observerTarget} ref={observerTargetRef} />
       </Container>

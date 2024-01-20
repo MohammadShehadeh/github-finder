@@ -30,6 +30,10 @@
   translate: -50% -50%;
 }
 
+.image {
+  background-color: var(--palette-primaryDark-700);
+}
+
 .stars,
 .forks {
   position: absolute;

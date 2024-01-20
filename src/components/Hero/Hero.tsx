@@ -13,8 +13,8 @@ export const Hero = () => {
           <Container className={styles.wrapper}>
             <Eyebrow label="Unleash" variant="outlined" />
             <h1 className={styles.headline}>
-              Empower Your Code Journey with GitHub Finder <br /> Uncover, Collaborate, and
-              Thrive in the Realm of Open Source Excellence!
+              Empower Your Code Journey with GitHub Finder <br /> Uncover, Collaborate, and Thrive
+              in the Realm of Open Source Excellence!
             </h1>
           </Container>
         </div>

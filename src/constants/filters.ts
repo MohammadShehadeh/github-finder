@@ -2,7 +2,7 @@ export type SearchType = 'users' | 'repositories';
 
 export type Filter = {
   label: string;
-  id: SearchType;
+  id: string;
 };
 
 export const USERS = 'users';

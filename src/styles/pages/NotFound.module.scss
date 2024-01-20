@@ -1,0 +1,29 @@
+.notFound {
+  margin-top: calc(var(--lg-spacing) * 3);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sm-spacing);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    transition: left 250ms ease-in-out;
+    background-color: var(--palette-primaryLight-900);
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    &::after {
+      left: 0;
+    }
+  }
+}

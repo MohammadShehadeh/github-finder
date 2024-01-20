@@ -33,7 +33,7 @@ nvm use
 
 ### Environment Variables
 
-The following environment variables are required for the proper functioning of the project.
+The following environment variables are required for the proper functioning of the project.\
 Create a `.env` file in the root directory and add the following values:
 
 #### `NEXT_PUBLIC_VERCEL_URL`

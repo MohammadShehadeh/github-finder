@@ -12,14 +12,15 @@ interface FormProps {
   onReset?: () => void;
 }
 
-export const Form = ({ onSubmit, onReset }: FormProps) => {
+const Form = ({ onSubmit, onReset }: FormProps) => {
   return (
-    <form className={styles.form} onSubmit={onSubmit} onReset={onReset}>
+    <form className={styles.form} onSubmit={onSubmit} onReset={onReset} data-testid="form">
       <SearchIcon className={styles.searchIcon} />
       <Input
+        data-testid="input"
         className={styles.input}
         required
-        placeholder="EX: MohammadShehadeh"
+        placeholder="e.g. Github"
         name="query"
       />
       {onReset && (
@@ -28,6 +29,7 @@ export const Form = ({ onSubmit, onReset }: FormProps) => {
           size="small"
           variant="normal"
           type="reset"
+          data-testid="reset"
           aria-label="Reset"
         >
           <ResetIcon />
@@ -39,3 +41,5 @@ export const Form = ({ onSubmit, onReset }: FormProps) => {
     </form>
   );
 };
+
+export const MemoizedForm = React.memo(Form);

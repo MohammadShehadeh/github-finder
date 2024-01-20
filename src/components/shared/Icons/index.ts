@@ -1,3 +1,4 @@
+export { ArrowLeftIcon } from './ArrowLeftIcon';
 export { GithubIcon } from './GithubIcon';
 export { ResetIcon } from './ResetIcon';
 export { SearchIcon } from './SearchIcon';

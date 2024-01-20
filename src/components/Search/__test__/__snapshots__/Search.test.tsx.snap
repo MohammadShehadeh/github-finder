@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should render to match snapshot 1`] = `
+<section
+  className="search"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="contain"
+    >
+      <h2
+        className="center"
+      >
+        Search for developers or repositories
+      </h2>
+      <form
+        className="form"
+        data-testid="form"
+        onReset={[Function]}
+        onSubmit={[Function]}
+      >
+        <svg
+          className="searchIcon"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.5 14C7 14 5 12 5 9.5S7 5 9.5 5 14 7 14 9.5 12 14 9.5 14zm6 0h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C16 5.9 13.1 3 9.5 3S3 5.9 3 9.5 5.9 16 9.5 16c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5z"
+          />
+        </svg>
+        <input
+          className="input input"
+          data-testid="input"
+          name="query"
+          placeholder="e.g. Github"
+          required={true}
+        />
+        <button
+          aria-label="Reset"
+          className="button normal small reset"
+          data-testid="reset"
+          type="reset"
+        >
+          <svg
+            viewBox="0 0 21 21"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              transform="matrix(0 1 1 0 2.5 2.5)"
+            >
+              <path
+                d="m3.98652376 1.07807068c-2.38377179 1.38514556-3.98652376 3.96636605-3.98652376 6.92192932 0 4.418278 3.581722 8 8 8s8-3.581722 8-8-3.581722-8-8-8"
+              />
+              <path
+                d="m4 1v4h-4"
+                transform="matrix(1 0 0 -1 0 6)"
+              />
+            </g>
+          </svg>
+        </button>
+        <button
+          aria-label="Search"
+          className="button contained default submit"
+          type="submit"
+        >
+          <svg
+            viewBox="0 0 495.003 495.003"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M164.711,456.687c0,2.966,1.647,5.686,4.266,7.072c2.617,1.385,5.799,1.207,8.245-0.468l55.09-37.616   l-67.6-32.22V456.687z"
+              />
+              <path
+                d="M492.431,32.443c-1.513-1.395-3.466-2.125-5.44-2.125c-1.19,0-2.377,0.264-3.5,0.816L7.905,264.422   c-4.861,2.389-7.937,7.353-7.904,12.783c0.033,5.423,3.161,10.353,8.057,12.689l125.342,59.724l250.62-205.99L164.455,364.414   l156.145,74.4c1.918,0.919,4.012,1.376,6.084,1.376c1.768,0,3.519-0.322,5.186-0.977c3.637-1.438,6.527-4.318,7.97-7.956   L494.436,41.257C495.66,38.188,494.862,34.679,492.431,32.443z"
+              />
+            </g>
+          </svg>
+        </button>
+      </form>
+      <div
+        className="filters"
+      >
+        <p>
+          Search type:
+        </p>
+        <button
+          className="button contained small"
+          onClick={[Function]}
+        >
+          Users
+        </button>
+        <button
+          className="button outlined small"
+          onClick={[Function]}
+        >
+          Repositories
+        </button>
+      </div>
+      <div
+        className="grid"
+      />
+      <div
+        className="observerTarget"
+      />
+    </div>
+  </div>
+</section>
+`;

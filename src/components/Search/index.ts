@@ -1,3 +1,3 @@
 export { Search } from './Search';
-export { Form } from './Form';
-export { Filters } from './Filters';
+export { MemoizedForm as Form } from './Form';
+export { MemoizedFilters as Filters } from './Filters';

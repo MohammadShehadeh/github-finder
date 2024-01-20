@@ -17,6 +17,32 @@ button.submit {
 
 .submit {
   right: var(--sm-spacing);
+
+  &:hover {
+    svg {
+      animation: shake 500ms ease-out;
+    }
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  5%,
+  25%,
+  45%,
+  65% {
+    transform: translateX(-2px);
+  }
+
+  15%,
+  35%,
+  55% {
+    transform: translateX(2px);
+  }
 }
 
 input.input {
@@ -28,7 +54,9 @@ input.input {
   right: 64px;
   transition: rotate 500ms ease-in-out;
 
-  &:hover {
-    rotate: -360deg;
+  @media (hover: hover) {
+    &:hover {
+      rotate: -360deg;
+    }
   }
 }

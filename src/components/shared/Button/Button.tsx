@@ -18,10 +18,7 @@ export const Button = ({
   ...restProps
 }: ButtonProps) => {
   return (
-    <button
-      className={cx(styles.button, styles[variant], styles[size], className)}
-      {...restProps}
-    >
+    <button className={cx(styles.button, styles[variant], styles[size], className)} {...restProps}>
       {children}
     </button>
   );

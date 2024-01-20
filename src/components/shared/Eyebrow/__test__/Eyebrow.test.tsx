@@ -9,9 +9,7 @@ describe('Eyebrow', () => {
   });
 
   it('should render "outlined" to match snapshot', () => {
-    const tree = renderer
-      .create(<Eyebrow variant="outlined" label="Contained Eyebrow" />)
-      .toJSON();
+    const tree = renderer.create(<Eyebrow variant="outlined" label="Contained Eyebrow" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
